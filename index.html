@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+    <header class="wrapper" id="header">
+        <h1 class="titleHeader">Music For All !!!</h1>
+    </header>
+    <main class="container" id="container">
+        <article class="header">
+            <img class="logo" src="img/logo.jpg" alt="loading..."/>
+            <h1 class="title" id="name">Music Cartoon</h1>
+            <p class="text" id="titleMusic">Name</p>
+        </article>
+        <article class="all">
+            <article class="section">
+                <img src="img/back.png" id="Back_Btn" alt="loading..."/>
+                <img src="img/play.png" id="playPause_btn" alt="loading..."/>
+                <img src="img/next.png" id="Next_Btn" alt="loading..."/>
+            </article>
+            <div class="parameters" id="parameters">
+                <span>volume</span>
+                <input type="range" class="volume" id="volumeValue"/>
+                <span>Speed</span>
+                <input type="range" class="speed" id="speedValue" max="200" min="0"/>
+            </div>
+            <div class="colors">
+                <button class="dark" id="darkbtn"></button>
+                <button class="light" id="lightbtn"></button>
+            </div>
+            <div>
+                <audio src="music/conan.mp3" id="music1"></audio>
+            </div>
+        </article>
+    </main>
+    <script src="js/main.js"></script>
+    <script src="js/parameters.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html>
